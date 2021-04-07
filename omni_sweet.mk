@@ -21,8 +21,8 @@ DEVICE_PATH := device/xiaomi/sweet
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/twrp/soong/makevars.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
+#$(call inherit-product, vendor/twrp/soong/makevars.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/sweet/device.mk)
