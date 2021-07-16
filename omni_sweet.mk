@@ -26,6 +26,9 @@ $(call inherit-product, vendor/pb/config/common.mk)
 # Inherit device configuration
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
+# Enable project quotas and casefolding for emulated storage without sdcardfs
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := sweet
 PRODUCT_NAME := omni_sweet
