@@ -30,5 +30,5 @@ $(call inherit-product, device/xiaomi/sweet/device.mk)
 PRODUCT_DEVICE := sweet
 PRODUCT_NAME := omni_sweet
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := M2101K6G
+PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
