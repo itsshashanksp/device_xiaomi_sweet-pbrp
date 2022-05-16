@@ -14,12 +14,18 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/xiaomi/sweet
+
+# For building with minimal manifest
+ALLOW_MISSING_DEPENDENCIES := true
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
-TARGET_CPU_VARIANT := cortex-a73
+TARGET_CPU_VARIANT := kryo
 
 TARGET_2ND_ARCH := arm
 TARGET_2ND_ARCH_VARIANT := armv8-a
@@ -27,9 +33,10 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a73
 
-TARGET_SUPPORTS_64_BIT_APPS := false
 ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
+TARGET_USES_64_BIT_BINDER := true
+TARGET_SUPPORTS_64_BIT_APPS := true
 
 # Bootloader
 PRODUCT_PLATFORM := sm6150
@@ -123,9 +130,6 @@ PB_TORCH_PATH := "/sys/class/leds/led:torch_0"
 PB_DISABLE_DEFAULT_DM_VERITY := true
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
 PB_DEVICE_RATIO := "20:9"
-
-# Extra stuff
-ALLOW_MISSING_DEPENDENCIES := true
 
 # TWRP specific build flags
 TW_THEME := portrait_hdpi
