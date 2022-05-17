@@ -14,11 +14,14 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/xiaomi/sweet
+LOCAL_PATH := device/xiaomi/sweet
+
 # Release name
 PRODUCT_RELEASE_NAME := sweet
-DEVICE_PATH := device/xiaomi/sweet
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit from our custom product configuration
