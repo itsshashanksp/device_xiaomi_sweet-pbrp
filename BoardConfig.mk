@@ -158,3 +158,6 @@ TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone18/temp"
 TW_SUPPORT_INPUT_AIDL_HAPTICS := true
 
 
+# include python, for ABX conversion
+TW_INCLUDE_PYTHON := true
+#
