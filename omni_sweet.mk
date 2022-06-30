@@ -27,8 +27,8 @@ $(call inherit-product, vendor/pb/config/common.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := sweet
 PRODUCT_NAME := omni_sweet
-PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := M2101K6G
+PRODUCT_DEVICE := sweet
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi Note 10 Pro
 PRODUCT_MANUFACTURER := Xiaomi
