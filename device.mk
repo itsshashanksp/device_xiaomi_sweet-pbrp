@@ -39,7 +39,7 @@ PRODUCT_HOST_PACKAGES += \
 
 #Properties
 TW_OVERRIDE_SYSTEM_PROPS := \
-    "ro.build.date.utc;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
+    "ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental"
 
 # Additional binaries & libraries needed for recovery
 TARGET_RECOVERY_DEVICE_MODULES += \
