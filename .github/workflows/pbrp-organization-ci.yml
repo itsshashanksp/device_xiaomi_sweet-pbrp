@@ -41,7 +41,7 @@ jobs:
               if [[ ${BUILD_RELEASE_TYPE} == "OFFICIAL" ]]; then echo "PB_OFFICIAL=true"  >> $GITHUB_ENV;fi
 
        - name: Checkout Cleaning Up Runner Repo
-         uses: actions/checkout@v2
+         uses: actions/checkout@v4
          with:
            repository: PitchBlackRecoveryProject/Cleaner
            ref: main
@@ -54,7 +54,7 @@ jobs:
          uses: actions/checkout@v2
          with:
            repository: PitchBlackRecoveryProject/Compiler
-           ref: production
+           ref: test
            token: ${{ secrets.GH_BOT_TOKEN }}
            path: .github/actions/Compiler
        - name: Recovery Compilation
